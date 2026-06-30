@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Svištinec</title>
+
+    <link rel="stylesheet" href="27myslím.css">
+
+    <style>
+        gmp-map {
+            width: 100%;
+            height: 400px;
+            display: block;
+        }
+    </style>
+
+    <script type="module" src="./index.js"></script>
+    <script
+        async
+        src="https://maps.googleapis.com/maps/api/js?loading=async&key=TVŮJ_API_KLÍČ&libraries=maps,marker">
+    </script>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <a href="index.html">
+            <button class="nav-button">
+                <img class="nav-icon" src="https://c.animaapp.com/mhhvzmezXyM5uz/img/image-1.png">
+                HOME
+            </button>
+        </a>
+
+        <a href="fotobanka.html">
+            <button class="nav-button">
+                <img class="nav-icon" src="https://c.animaapp.com/mhhvzmezXyM5uz/img/image-2.png">
+                PŘIDAT
+            </button>
+        </a>
+
+        <a href="photo.html">
+            <button class="nav-button">
+                <img class="nav-icon" src="https://c.animaapp.com/mhhvzmezXyM5uz/img/image-3.png">
+                FOTKY
+            </button>
+        </a>
+
+    </aside>
+
+    <div class="radek">
+
+        <img class="obrazekxd" src="tvojemama.webp" alt="Svišť">
+
+        <h1 class="nadpis">Svištinec</h1>
+
+        <h2 class="text">
+            Aplikace Svištinec vznikla za účelem spojovat fanoušky svišťů po celém světě.
+            Sdílej fotky, videa a zážitky.
+        </h2>
+
+        <h1 class="nadpis2">Připoj se a sdílej sviště</h1>
+
+        <h2 class="text2">
+            Připoj se do naší skupiny WhatsApp a posílej své fotky a videa se sviští tématikou.
+        </h2>
+
+        <div class="info">
+
+            <h1>O Svištinci</h1>
+
+            <gmp-map
+                center="41.027748173921374,-92.41852445367961"
+                zoom="13"
+                map-id="DEMO_MAP_ID">
+
+                <gmp-advanced-marker
+                    position="41.027748173921374,-92.41852445367961"
+                    title="Ottumwa, IA">
+                </gmp-advanced-marker>
+
+            </gmp-map>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
